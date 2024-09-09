@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="flex-div">
+        <div class="main-div">
+            <div class="ages">
+                <label for="getAges" style="margin-right: 30px;">Age</label>
+                <input type="number" placeholder="enter Age" id="getAges">
+                <span>ages:2-120</span>
+            </div>
+            <div class="gender">
+                <label>Gender</label>
+                <input type="radio" name="Gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="height">
+                <label for="getHeight" style="margin-right: 13px;">Height</label>
+                <input type="number" placeholder="enter height in cm" id="getHeight">
+            </div>
+            <div class="weight">
+                <label for="getWeight" style="margin-right: 10px;">Weight</label>
+                <input type="number" placeholder="enter weight in kg" id="getWeight">
+            </div>
+            <button id="Calculate" type="submit">Calculate</button>
+            <button id="Clear" type="submit">Clear</button>
+        </div>
+        <div class="result-div">
+            <h2 class="first-result">Result:BMI is 0</h2>
+            <div class="image">
+                <img src="Screenshot 2024-09-09 194758.png" class="range">
+                <img src="Pointer-removebg-preview.png" class="img">
+            </div>
+            <ul>
+                <li>Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</li>
+                <li>Healthy weight for the height: 59.9 kg - 81 kg</li>
+                <li>BMI Prime: 0.8</li>
+                <li>Ponderal Index: 11.1 kg/m3</li>
+            </ul>
+        </div>
+    </div>
+    
+   <script src="app.js"></script>
+</body>
+</html>
